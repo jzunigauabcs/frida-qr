@@ -39,6 +39,9 @@
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
+ <a-assets>
+          <img id="imagen" src="https://jzunigauabcs.github.io/frida-qr/assets/autorretratocollarespinascolibri.jpg">
+      </a-assets>
     <a-nft
       type="nft"
       url="https://jzunigauabcs.github.io/frida-qr/assets/frame"
@@ -49,11 +52,9 @@
     >
     </a-nft>
       <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-          <!--a-assets>
-          <img id="imagen" src="https://jzunigauabcs.github.io/frida-qr/assets/autorretratocollarespinascolibri.jpg">
-      </a-assets-->
-      <a-image src="https://jzunigauabcs.github.io/frida-qr/assets/autorretratocollarespinascolibri.jpg"></a-image>
-          <!--a-image src="#imagen"></a-image-->
+         
+          <!--a-image src="https://jzunigauabcs.github.io/frida-qr/assets/autorretratocollarespinascolibri.jpg"></a-image-->
+          <a-image src="#imagen" position="0 1 0" scale="1 1 1"></a-image>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
   </a-scene>
